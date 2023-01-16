@@ -1,0 +1,141 @@
+.table.score{
+
+  table-layout: fixed;
+  overflow: auto;
+}
+
+
+/* Bill details table heading and 'info' row */
+
+
+.score thead th {
+  background-color: #004e59;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+/* Bill details table row entries, left column */
+
+.score tbody th {
+  background-color: #004e59;
+  text-align: left;
+  color: white;
+  font-family: sans-serif;
+} 
+
+.score .thead {
+  
+width: 50px;
+
+}
+
+.score tr:hover {background-color: #ddd;}
+
+.score .tbody tr td {
+
+width: 100%;
+overflow: scroll;
+text-align: center !important;
+}
+
+.score td {
+  text-align: center !important;
+  }
+
+
+.less-zero { color:  red; }
+.greater-zero { color: green; }
+
+
+@media 
+only screen 
+and (max-width: 760px), (min-device-width: 350px) 
+and (max-device-width: 1024px)  {
+
+  table.score {
+     font-size: small;
+    }
+
+/* Force table to not be like tables anymore */
+/* .score table, thead, tbody, th, td, tr {
+    display: block;
+    overflow-x: auto;
+
+} */
+
+/* Hide table headers (but not display: none;, for accessibility) */
+/* .score thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+
+} */
+
+  .score tr {
+  border: 1px;
+  }
+
+  /* .score th {
+      text-align: center !important;
+      }
+
+  .score tr:nth-child(odd) {
+  background: #ccc;
+  } */
+
+  .score td {
+    width: 1%;
+    white-space: nowrap;
+  }
+      /* Behave  like a "row" */
+      /* border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      /* padding-left: 50%; */
+      /* text-align: center;
+  /* } */
+
+   .less-zero { color:  red; }
+  .greater-zero { color: green; }
+
+  /* .score td:before { */
+      /* Now like a table header */
+      /* position: absolute; */
+      /* Top/left values mimic padding */
+      /* top: 0;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap; */
+   /* } */
+
+} 
+
+
+
+
+
+/* .score table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    display: table;
+  }
+
+.score td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+.score tr:nth-child(even){background-color: #f2f2f2;}
+  
+.score tr:hover {background-color: #ddd;}
+  
+.score th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  } */

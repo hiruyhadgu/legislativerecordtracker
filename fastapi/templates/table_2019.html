@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <title>scores</title>
+</head>
+
+<body>
+  <table class=score>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Accountability</th>
+        <th>Affordable Housing</th>
+        <th>Budget</th>
+        <th>School Quality</th>
+      </tr>
+    </thead>
+    <tbody>
+      {%- for elected in scores["2019"] -%}
+      <tr>
+        <th>{{elected}}</th>
+        {%- for issue in scores["2019"][elected] -%}
+          {%- if scores["2019"][elected][issue]|int < 0 -%}
+          <td class = 'less-zero'>{{scores["2019"][elected][issue]}}</td>
+          {% else %}
+          <td class = 'greater-zero'>{{scores["2019"][elected][issue]}}</td>
+          {%- endif -%}
+        {%- endfor -%}
+      </tr>
+      {%- endfor -%}
+    </tbody>
+  </table>
+</body>
+
+</html>

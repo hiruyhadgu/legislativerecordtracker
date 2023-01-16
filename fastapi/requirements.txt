@@ -1,0 +1,10 @@
+pandas
+fastapi
+fastapi
+fastapi
+uvicorn
+pydantic
+jinja2
+pathlib
+gunicorn
+server_thread

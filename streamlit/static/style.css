@@ -1,0 +1,142 @@
+
+.table.dataframe{
+
+    table-layout: fixed;
+    overflow: auto;
+}
+
+
+/* Bill details table heading and 'info' row */
+
+
+.dataframe thead th {
+    background-color: #004e59;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+/* Bill details table row entries, left column */
+
+.dataframe tbody th {
+    background-color: #004e59;
+    text-align: left;
+    color: white;
+    font-family: sans-serif;
+} 
+
+.dataframe .thead {
+    
+  width: 50px;
+  
+}
+
+.dataframe .tbody tr {
+
+  width: 100%;
+  overflow: scroll;
+}
+
+/* tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  word-break: break-word
+}  */
+
+
+/* Vote record table. Reduces table width and centers it */
+
+.css-165ax5l.edw49t13 {
+    width: 50%;
+    margin: auto;
+} 
+
+/* Vote record table. Handles 'Vote' row separately*/
+
+.css-165ax5l.edw49t13 thead th {
+    background-color: #004e59;
+    text-align: center !important;
+    color: white;
+    font-family: sans-serif;
+    flex-wrap: wrap;
+}
+
+
+/* Vote record table. Handles left column separately*/
+
+.css-165ax5l.edw49t13 th {
+    background-color: #004e59;
+    text-align: left;
+    color: white;
+    font-family: sans-serif;
+    flex-wrap: wrap;
+
+}
+
+/* Vote record table. Handles vote results separately*/
+
+.css-165ax5l.edw49t13 td {
+    text-align: center !important;
+    font-family: sans-serif;
+    flex-wrap: wrap;
+
+}
+
+
+@media
+only screen 
+and (max-width: 760px), (min-device-width: 350px) 
+and (max-device-width: 1024px)  {
+
+    table.dataframe {
+        display: block;
+      }
+
+  /* Force table to not be like tables anymore */
+  .dataframe table, thead, tbody, th, td, tr {
+      display: block;
+      overflow-x: auto;
+
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  .dataframe thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+
+  }
+
+    .dataframe tr {
+    margin: 0 0 1rem 0;
+    }
+
+    .dataframe th {
+        text-align: center !important;
+        }
+
+    .dataframe tr:nth-child(odd) {
+    background: #ccc;
+    }
+
+    .dataframe td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        /* padding-left: 50%; */
+    }
+
+    .dataframe td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 0;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+}

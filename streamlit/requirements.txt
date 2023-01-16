@@ -1,0 +1,8 @@
+pandas
+Pillow
+plotly
+streamlit
+IPython
+requests
+jinja2
+server_thread

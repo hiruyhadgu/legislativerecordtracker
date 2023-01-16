@@ -1,0 +1,9 @@
+os
+pandas
+streamlit
+plotly
+sqlite3
+numpy
+requests
+streamlit.components.v1
+server_thread
